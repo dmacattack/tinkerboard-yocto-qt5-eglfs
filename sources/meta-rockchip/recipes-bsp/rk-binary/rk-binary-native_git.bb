@@ -6,7 +6,8 @@ LICENSE = "BINARY"
 LIC_FILES_CHKSUM = "file://LICENSE.TXT;md5=564e729dd65db6f65f911ce0cd340cf9"
 NO_GENERIC_LICENSE[BINARY] = "LICENSE.TXT"
 
-SRC_URI = "git://github.com/rockchip-linux/rkbin.git"
+SRC_BRANCH ?= "yocto-old"
+SRC_URI = "git://github.com/rockchip-linux/rkbin.git;branch=${SRC_BRANCH}"
 SRCREV = "6dc367cc3353577c037c3c4e85fbed1a54fe84b5"
 S = "${WORKDIR}/git"
 

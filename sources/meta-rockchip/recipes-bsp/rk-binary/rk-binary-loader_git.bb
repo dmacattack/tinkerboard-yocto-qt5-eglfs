@@ -6,7 +6,8 @@ NO_GENERIC_LICENSE[BINARY] = "LICENSE.TXT"
 
 DEPENDS = "rk-binary-native"
 
-SRC_URI = "git://github.com/rockchip-linux/rkbin.git"
+SRC_BRANCH ?= "yocto-old"
+SRC_URI = "git://github.com/rockchip-linux/rkbin.git;branch=${SRC_BRANCH}"
 SRCREV = "76ec4622c56a5d077b9cfa0548d3dd4f494e71f5"
 S = "${WORKDIR}/git"
 
